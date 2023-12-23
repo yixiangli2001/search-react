@@ -1,38 +1,113 @@
 .App {
+  height: 100%;
+  background-color: #8e6aea;
+}
+.App header, .App footer {
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.App header .insideHeader, .App footer .insideHeader, .App footer .insideFooter {
+  max-width: 1140px;
+  display: flex;
+  margin: auto;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.App header .insideHeader .logo h1, .App footer .insideHeader .logo h1, .App footer .insideFooter .logo h1 {
+  display: inline;
+  margin-left: 20px;
+  color: #472aa2;
+}
+.App header .insideHeader .question, .App footer .insideHeader .question, .App footer .insideFooter .question {
+  justify-self: flex-end;
+}
+.App main {
+  max-width: 1140px;
+  margin: auto;
+  /* CSS */
+}
+.App main .searchBox {
+  margin: auto;
+  width: 100%;
+}
+.App main .searchBox input[type=text] {
+  color: #472aa2;
+  font-size: 16px;
+  background: white;
+  width: 50%;
+  max-width: 500px;
+  height: 20px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+}
+.App main .button-65 {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  backface-visibility: hidden;
+  background-color: #ffc338;
+  border-radius: 30px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 5px 10px;
+  position: relative;
   text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App main .button-65:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App main .button-65:hover:after {
+  opacity: 0.5;
+}
+.App main .button-65:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0, rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+.App main .button-65:active:after {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .App main .button-65 {
+    padding: 10px 22px;
+    width: 176px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App footer {
+  background-color: #4c28a7;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App footer .insideFooter {
+  padding: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.App footer .insideFooter p {
+  text-align: center;
+  width: 100%;
+}/*# sourceMappingURL=App.css.map */
